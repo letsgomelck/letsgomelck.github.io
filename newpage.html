@@ -1,103 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melbourne Budget Plan</title>
+    <title>Hotel Comparison (250303-0305)</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body class="bg-gray-100 text-gray-800">
-
-    <!-- Header -->
-    <header class="bg-blue-600 text-white py-4">
-        <h1 class="text-2xl font-bold text-center">Melbourne Budget Plan</h1>
-    </header>
-
-        <!-- 导航栏 -->
-        <nav class="bg-gray-800 text-white p-4">
-            <ul class="flex space-x-4 justify-center">
-                <li><a href="index.html" class="hover:underline">首页</a></li>
-                <li><a href="newpage.html" class="hover:underline">更新页面</a></li>
-            </ul>
-        </nav>
-
-    <!-- Update Information -->
-    <section class="px-4 py-6">
-        <h2 class="text-xl font-semibold mb-2"># 250303-0305</h2>
-        <p class="text-sm text-gray-600">更新于 20241120</p>
-        <p class="text-sm text-red-500">注意：干净/价格/位置</p>
-    </section>
-
-    <!-- New Table -->
-    <section class="px-4 py-6">
-        <h2 class="text-xl font-semibold mb-4">酒店选择</h2>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center py-6">
+    <div class="w-full max-w-6xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="px-6 py-4 bg-gray-200">
+            <h1 class="text-2xl font-bold text-gray-800">
+                Hotel Comparison (250303-0305)
+                <span class="text-sm text-gray-500 ml-2">Updated: 20241120</span>
+            </h1>
+        </div>
         <div class="overflow-x-auto">
-            <table class="table-auto w-full border-collapse border border-gray-300">
-                <thead class="bg-blue-100">
-                    <tr>
-                        <th class="border border-gray-300 px-4 py-2">序号</th>
-                        <th class="border border-gray-300 px-4 py-2">价格（刀）</th>
-                        <th class="border border-gray-300 px-4 py-2">名称</th>
-                        <th class="border border-gray-300 px-4 py-2">建成年份</th>
-                        <th class="border border-gray-300 px-4 py-2">面积（㎡）</th>
+            <table class="w-full">
+                <thead>
+                    <tr class="bg-gray-100 border-b">
+                        <th class="p-3 text-center font-semibold text-gray-700 w-[50px]">Rank</th>
+                        <th class="p-3 text-right font-semibold text-gray-700 w-[100px]">Price</th>
+                        <th class="p-3 text-left font-semibold text-gray-700">Hotel Name</th>
+                        <th class="p-3 text-center font-semibold text-gray-700 w-[100px]">Year</th>
+                        <th class="p-3 text-center font-semibold text-gray-700 w-[100px]">Rating/Size</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="bg-white">
-                        <td class="border border-gray-300 px-4 py-2">1</td>
-                        <td class="border border-gray-300 px-4 py-2">590</td>
-                        <td class="border border-gray-300 px-4 py-2">Jasper</td>
-                        <td class="border border-gray-300 px-4 py-2">-</td>
-                        <td class="border border-gray-300 px-4 py-2">22</td>
+                    <tr class="bg-white hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600">1</td>
+                        <td class="p-3 text-right text-gray-800 font-medium">590</td>
+                        <td class="p-3 font-semibold text-gray-900">Jasper</td>
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-center text-blue-600 font-bold">22</td>
                     </tr>
-                    <tr class="bg-gray-50">
-                        <td class="border border-gray-300 px-4 py-2"></td>
-                        <td class="border border-gray-300 px-4 py-2">637</td>
-                        <td class="border border-gray-300 px-4 py-2">Veriu维妈带厨房</td>
-                        <td class="border border-gray-300 px-4 py-2">2022</td>
-                        <td class="border border-gray-300 px-4 py-2">26</td>
+                    <tr class="bg-gray-50 hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">637</td>
+                        <td class="p-3 font-semibold text-gray-900">Veriu维妈带厨房</td>
+                        <td class="p-3 text-center text-gray-600">2022</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">26</td>
                     </tr>
-                    <tr class="bg-white">
-                        <td class="border border-gray-300 px-4 py-2"></td>
-                        <td class="border border-gray-300 px-4 py-2">704</td>
-                        <td class="border border-gray-300 px-4 py-2">Mercure市中心疫情</td>
-                        <td class="border border-gray-300 px-4 py-2">2022</td>
-                        <td class="border border-gray-300 px-4 py-2">23</td>
+                    <tr class="bg-white hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">704</td>
+                        <td class="p-3 font-semibold text-gray-900">Mercure市中心疫情</td>
+                        <td class="p-3 text-center text-gray-600">2022</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">23</td>
                     </tr>
-                    <tr class="bg-gray-50">
-                        <td class="border border-gray-300 px-4 py-2"></td>
-                        <td class="border border-gray-300 px-4 py-2">766</td>
-                        <td class="border border-gray-300 px-4 py-2">帝盛/床单干净？</td>
-                        <td class="border border-gray-300 px-4 py-2">2023</td>
-                        <td class="border border-gray-300 px-4 py-2">27</td>
+                    <tr class="bg-gray-50 hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">766</td>
+                        <td class="p-3 font-semibold text-gray-900">帝盛/床单干净？</td>
+                        <td class="p-3 text-center text-gray-600">2023</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">27</td>
                     </tr>
-                    <!-- Repeat similar rows for remaining data -->
-                    <tr class="bg-gray-50">
-                        <td class="border border-gray-300 px-4 py-2">25</td>
-                        <td class="border border-gray-300 px-4 py-2">2638</td>
-                        <td class="border border-gray-300 px-4 py-2">利兹卡尔顿</td>
-                        <td class="border border-gray-300 px-4 py-2">2023</td>
-                        <td class="border border-gray-300 px-4 py-2">44平</td>
+                    <tr class="bg-white hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600">5</td>
+                        <td class="p-3 text-right text-gray-800 font-medium">796</td>
+                        <td class="p-3 font-semibold text-gray-900">温莎酒店</td>
+                        <td class="p-3 text-center text-gray-600">复古</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">/22</td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-    <div class="text-center my-8">
-        <a href="index.html" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
-            返回首页
-        </a>
-    </div>
-    
-    
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-4">
-        <p class="text-sm">© 2024 Melbourne Budget Plan</p>
-    </footer>
-
-</body>
-
-</html>
+                    <tr class="bg-gray-50 hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">844</td>
+                        <td class="p-3 font-semibold text-gray-900">🍻Indigo设计感</td>
+                        <td class="p-3 text-center text-gray-600">2023</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">/28</td>
+                    </tr>
+                    <tr class="bg-white hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">971</td>
+                        <td class="p-3 font-semibold text-gray-900">Hyatt Centric新离家近</td>
+                        <td class="p-3 text-center text-gray-600">2021</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">/32</td>
+                    </tr>
+                    <tr class="bg-gray-50 hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1006</td>
+                        <td class="p-3 font-semibold text-gray-900">Novotel Collins装修丑</td>
+                        <td class="p-3 text-center text-gray-600">2012</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">/25</td>
+                    </tr>
+                    <tr class="bg-white hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1024</td>
+                        <td class="p-3 font-semibold text-gray-900">Next希尔顿/床小</td>
+                        <td class="p-3 text-center text-gray-600">2023</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">27</td>
+                    </tr>
+                    <tr class="bg-gray-50 hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600">10</td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1080</td>
+                        <td class="p-3 font-semibold text-gray-900">Moven</td>
+                        <td class="p-3 text-center text-gray-600">2021</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">/25</td>
+                    </tr>
+                    <tr class="bg-white hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1160</td>
+                        <td class="p-3 font-semibold text-gray-900">VOCO 时尚</td>
+                        <td class="p-3 text-center text-gray-600">2022</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">/22</td>
+                    </tr>
+                    <tr class="bg-gray-50 hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1214</td>
+                        <td class="p-3 font-semibold text-gray-900">🍻Le Meridien</td>
+                        <td class="p-3 text-center text-gray-600">2023</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">/32</td>
+                    </tr>
+                    <tr class="bg-white hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1217</td>
+                        <td class="p-3 font-semibold text-gray-900">喜来登</td>
+                        <td class="p-3 text-center text-gray-600">2014年</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">35平</td>
+                    </tr>
+                    <tr class="bg-gray-50 hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1239</td>
+                        <td class="p-3 font-semibold text-gray-900">pullman市中心</td>
+                        <td class="p-3 text-center text-gray-600">2019</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">/36</td>
+                    </tr>
+                    <tr class="bg-white hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600">15</td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1308</td>
+                        <td class="p-3 font-semibold text-gray-900">洲际</td>
+                        <td class="p-3 text-center text-gray-600">2008</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">/30</td>
+                    </tr>
+                    <tr class="bg-gray-50 hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1333</td>
+                        <td class="p-3 font-semibold text-gray-900">Rydges正斗对面</td>
+                        <td class="p-3 text-center text-gray-600">2023</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">/21</td>
+                    </tr>
+                    <tr class="bg-white hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1360</td>
+                        <td class="p-3 font-semibold text-gray-900">🫵🏻Hilton离家近</td>
+                        <td class="p-3 text-center text-gray-600">2021</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">29</td>
+                    </tr>
+                    <tr class="bg-gray-50 hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1369</td>
+                        <td class="p-3 font-semibold text-gray-900">Crown Towers</td>
+                        <td class="p-3 text-center text-gray-600">2009</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">/40</td>
+                    </tr>
+                    <tr class="bg-white hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1381</td>
+                        <td class="p-3 font-semibold text-gray-900">Next希尔顿</td>
+                        <td class="p-3 text-center text-gray-600">2023</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">40</td>
+                    </tr>
+                    <tr class="bg-gray-50 hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600">20</td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1491</td>
+                        <td class="p-3 font-semibold text-gray-900">朗廷酒店</td>
+                        <td class="p-3 text-center text-gray-600">2015</td>
+                        <td class="p-3 text-center text-blue-600 font-bold">/32</td>
+                    </tr>
+                    <tr class="bg-white hover:bg-blue-50 transition-colors duration-200 border-b">
+                        <td class="p-3 text-center text-gray-600"></td>
+                        <td class="p-3 text-right text-gray-800 font-medium">1513</td>
+                        <td class="p-3 font-semibold text-gray-900">Westin</td>
+                        <td class="p-
